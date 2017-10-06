@@ -1,0 +1,190 @@
+body {
+	/*font-family: Verdana,sans-serif;*/
+	font-family: "Roboto", sans-serif;
+	/*font-size:15px;*/
+	font-size:100%;
+	line-height:1.3rem;
+	color:#000 !important;
+	background-color:#f1f1f1 !important;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5 {
+	font-family:"Segoe UI",Arial,sans-serif;
+	margin: 0.14rem 0rem 0.14rem 0rem;
+}
+
+h1 {
+	font-size: 1.3rem;
+}
+
+h2 {
+	font-size: 1.15rem;
+}
+
+h3 {
+	font-size: 1.00rem;
+}
+
+h4 {
+	font-size: 0.90rem;
+}
+
+h5 {
+	font-size: 0.80rem;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow:visible;
+  border:0;
+  border-top:0.05rem solid #eee;
+  margin: 0.4rem 0rem 0.4rem 0rem;
+}
+
+hr.hidden-margin {
+	visibility: hidden;
+	margin: 0.1rem 0rem 0.1rem 0rem;
+}
+
+.right {
+	float: right !important;
+}
+
+.left {
+	float: left !important;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+/*profile*/
+
+div.profile {
+	display: table;
+    height: 100%;
+    width: 100%;
+}
+
+div.profile div.title h3{
+	/** TODO Justify **/
+	text-align: justify;
+	color: #666666;
+}
+
+div.profile div.info {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+div.profile div.info div.column-info {
+	float: right;
+}
+
+div.profile div.info div.column-info ul {
+	margin: 0rem;
+	list-style: none;
+	padding-left: 0.7rem;
+}
+
+/** Content **/
+
+.content {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+section {
+	background-color: white;
+	margin-top: 0.5rem;
+	font-weight: 400;
+	padding: 1rem 1.7rem 1rem 1.7rem;
+	box-shadow:0 0.14rem 0.28rem 0 rgba(0,0,0,0.16),0 0.14rem 0.7rem 0 rgba(0,0,0,0.12)!important;
+
+}
+
+section h2 {
+	color: #525564;
+}
+
+section h3 {
+	color: #74828F;
+}
+
+section h4 {
+	color: #74828F;
+}
+
+div.row {
+	/*overflow:hidden;*/
+}
+
+div.row h3 span.date {
+	font-weight:normal;
+	font-size: 0.85rem;
+	color: #419488;
+}
+
+.round {
+	border-radius:4px!important;
+}
+
+.tag {
+	background-color:#000;
+	color:#fff;
+	display:inline-block;
+	padding-left:0.5rem;
+	padding-right:0.5rem;
+	text-align:center;
+}
+
+.tag-green {
+	color:#fff!important;
+	background-color:#009688!important;
+}
+
+.tag-grey {
+	color:#fff!important;
+	background-color:#f1f1f1!important;
+}
+
+/** Paragraph */
+
+p {
+	margin: 0rem;
+}
+
+span.calendar {
+	font-weight:normal;
+	font-size: 0.85rem;
+	color: #419488;
+}
+
+/** Tasks **/
+
+ul.tasks {
+	margin: 0rem;
+}
+
+a {
+	text-decoration:none;
+}
+
+.fa {
+	color: #419488;
+}
+
+i {
+	margin-right: 0.3rem !important;
+}
+
+@page  
+{ 
+    size: auto;
+    /* this affects the margin in the printer settings */ 
+    margin: 5mm;
+}
