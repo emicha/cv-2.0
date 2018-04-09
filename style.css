@@ -91,6 +91,12 @@ div.profile div.info div.column-info ul {
 	padding-left: 0.7rem;
 }
 
+@media (max-width:580px){
+	div.profile div.info {
+		float: left;
+	}
+}
+
 /** Content **/
 
 .content {
