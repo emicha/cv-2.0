@@ -1,10 +1,13 @@
 body {
 	/*font-family: Verdana,sans-serif;*/
-	font-family: "Roboto", sans-serif;
-	/*font-size:15px;*/
-	font-size:100%;
+	/*font-family: "Roboto", sans-serif;*/
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Lucida Grande,Helvetica,Arial,sans-serif,Segoe UI Symbol,Hiragino Kaku Gothic Pro,Meiryo,Hiragino Sans GB W3,Noto Naskh Arabic,Droid Arabic Naskh,Geeza Pro,Simplified Arabic,Noto Sans Thai,Thonburi,Dokchampa,Droid Sans Thai,Droid Sans Fallback,'.SFNSDisplay-Regular',Heiti SC,Microsoft Yahei;
+	/*font-family: "Segoe UI", Arial, sans-serif*/
+	/*font-family: Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Lucida Grande,Helvetica,Arial;*/
+	font-size:14px;
+	/*font-size:100%;*/
 	line-height:1.3rem;
-	color:#000 !important;
+	color:#404040 !important;
 	background-color:#f1f1f1 !important;
 	font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
@@ -12,7 +15,7 @@ body {
 }
 
 h1,h2,h3,h4,h5 {
-	font-family:"Segoe UI",Arial,sans-serif;
+	/*font-family:Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Lucida Grande,Helvetica,Arial;*/
 	margin: 0.14rem 0rem 0.14rem 0rem;
 }
 
@@ -24,16 +27,18 @@ h2 {
 	font-size: 1.15rem;
 }
 
-h3 {
+h3 {	
 	font-size: 1.00rem;
 }
 
 h4 {
-	font-size: 0.90rem;
+	/*font-size: 0.90rem;*/
+	font-weight: 600;
 }
 
 h5 {
-	font-size: 0.80rem;
+	/*font-size: 0.80rem;*/
+	font-weight: 400;
 }
 
 hr {
@@ -41,8 +46,8 @@ hr {
   height: 0;
   overflow:visible;
   border:0;
-  border-top:0.05rem solid #eee;
-  margin: 0.4rem 0rem 0.4rem 0rem;
+  border-top:0.1rem solid #eee;
+  margin: 0.1rem 0rem 0.1rem 0rem;
 }
 
 hr.hidden-margin {
@@ -64,38 +69,7 @@ hr.hidden-margin {
 
 /*profile*/
 
-div.profile {
-	display: table;
-    height: 100%;
-    width: 100%;
-}
 
-div.profile div.title h3{
-	/** TODO Justify **/
-	text-align: justify;
-	color: #666666;
-}
-
-div.profile div.info {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-div.profile div.info div.column-info {
-	float: right;
-}
-
-div.profile div.info div.column-info ul {
-	margin: 0rem;
-	list-style: none;
-	padding-left: 0.7rem;
-}
-
-@media (max-width:580px){
-	div.profile div.info {
-		float: left;
-	}
-}
 
 /** Content **/
 
@@ -114,26 +88,114 @@ section {
 }
 
 section h2 {
-	color: #525564;
+	color: #333333;
 }
 
 section h3 {
-	color: #74828F;
+	color: #333333;
 }
 
 section h4 {
-	color: #74828F;
+	color: #404040;
 }
+
+/** row **/ 
 
 div.row {
 	/*overflow:hidden;*/
+	margin-top: 0.7rem;
 }
 
-div.row h3 span.date {
+div.row.header {
+	/*overflow:hidden;*/
+	margin-top: 0rem;
+}
+
+div.row span.date {
+	font-weight:normal;
+	font-size: 0.9rem;
+	color: #419488;
+}
+
+div.table {
+	display: table;
+	width: 100%;
+	overflow:hidden;
+}
+
+div.table > div.cell {
+	display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+
+@media (max-width:560px){
+	div.table > div.cell {
+		display: block;
+		width: 100%;
+	}
+}
+
+div.contact > div.link-column {
+	display: inline-block;
+	float: right;
+}
+
+div.link-column > ul {
+	list-style: none;
+	padding-left: 0.7rem;
+}
+
+@media (max-width:560px){
+	div.contact > div.link-column {
+		float: none;
+	}
+	div.link-column > ul {
+		padding-left: 0rem;
+	}	
+}
+
+div.language-left {
+	padding-right: 1rem;
+}
+
+div.language-right {
+	padding-left: 1rem;
+}
+
+@media (max-width:560px){
+	div.language-left {
+		padding-right: 0rem;
+	}
+
+	div.language-right {
+		padding-left: 0rem;
+	}
+}
+
+/** Paragraph */
+
+p {
+	margin: 0rem;
+}
+
+span.calendar {
 	font-weight:normal;
 	font-size: 0.85rem;
 	color: #419488;
 }
+
+/** Tasks **/
+
+ul {
+	margin: 0rem;
+}
+
+a {
+	text-decoration:none;
+}
+
+/** special **/ 
 
 .round {
 	border-radius:4px!important;
@@ -154,30 +216,8 @@ div.row h3 span.date {
 }
 
 .tag-grey {
-	color:#fff!important;
+	color:#404040!important;
 	background-color:#f1f1f1!important;
-}
-
-/** Paragraph */
-
-p {
-	margin: 0rem;
-}
-
-span.calendar {
-	font-weight:normal;
-	font-size: 0.85rem;
-	color: #419488;
-}
-
-/** Tasks **/
-
-ul.tasks {
-	margin: 0rem;
-}
-
-a {
-	text-decoration:none;
 }
 
 .fa {
