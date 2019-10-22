@@ -80,9 +80,9 @@ hr.hidden-margin {
 
 section {
 	background-color: white;
-	margin-top: 0.5rem;
+	margin-top: 0.56rem;
 	font-weight: 400;
-	padding: 1rem 1.7rem 1rem 1.7rem;
+	padding: 0.84rem 1.68rem 0.84rem 1.68rem;
 	box-shadow:0 0.14rem 0.28rem 0 rgba(0,0,0,0.16),0 0.14rem 0.7rem 0 rgba(0,0,0,0.12)!important;
 
 }
@@ -103,7 +103,7 @@ section h4 {
 
 div.row {
 	/*overflow:hidden;*/
-	margin-top: 0.7rem;
+	margin-top: 0.28rem;
 }
 
 div.row.header {
