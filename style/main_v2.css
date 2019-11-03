@@ -148,7 +148,7 @@ div.row span.date {
 	color: #2d7788;
 }
 
-div.table {
+/*div.table {
 	display: table;
 	width: 100%;
 	overflow:hidden;
@@ -158,13 +158,24 @@ div.table > div.cell {
 	display: table-cell;
     vertical-align: middle;
     width: 50%;
+}*/
+
+div.row > div.cell {
+	display: block;
+    /*vertical-align: middle;*/
+    /*width: 50%;*/
 }
 
 @media (max-width:560px){
-	div.table > div.cell {
+	/*div.table > div.cell {
 		display: block;
 		width: 100%;
 	}
+
+	div.row > div.cell {
+		display: block;
+		width: 100%;
+	}*/
 }
 
 div.contact > div.link-column {
@@ -184,14 +195,6 @@ div.link-column > ul {
 	div.link-column > ul {
 		padding-left: 0rem;
 	}	
-}
-
-div.language-left {
-	padding-right: 1rem;
-}
-
-div.language-right {
-	padding-left: 1rem;
 }
 
 @media (max-width:560px){
@@ -241,7 +244,7 @@ a {
 	text-align:center;
 }
 
-.tag-green {
+.tag-main-color {
 	color:#fff!important;
 	background-color:#2d7788!important;
 }
@@ -249,6 +252,18 @@ a {
 .tag-grey {
 	color:#fff!important;
 	background-color:#bfbfbf!important;
+}
+
+.level-bar {
+	color:#fff!important;
+	background-color:#bfbfbf!important;
+	width: 100%;
+	text-align: center;
+}
+
+.level-bar-inner {
+	color:#fff!important;
+	background-color:#2d7788!important;
 }
 
 .fa {
