@@ -148,6 +148,25 @@ div.row span.date {
 	color: #2d7788;
 }
 
+section > div.row > div.title {
+	display: flex;
+}
+
+section > div.row > div.title > div.heading {
+	flex-grow: 1;
+}
+
+section > div.row > div.title > div.date {
+	position: relative; 
+	width: 50%;
+}
+
+section > div.row > div.title > div.date > div {
+	bottom: 0px; 
+	right: 0px; 
+	position:absolute;
+}
+
 /*div.table {
 	display: table;
 	width: 100%;
