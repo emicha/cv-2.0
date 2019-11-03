@@ -1,3 +1,13 @@
+:root {
+	--color-strong: #00465f;
+	--color-medium: #1c5d73;
+	--color-medium-light: #5f98a3;
+	--color-light: #f0f2f4;
+	--color-base-background: white;
+	--color-strong-text: #404040;
+	--color-light-text: #fff;
+}
+
 body {
 	/*font-family: Verdana,sans-serif;*/
 	/*font-family: "Roboto", sans-serif;*/
@@ -7,8 +17,8 @@ body {
 	font-size:14px;
 	/*font-size:100%;*/
 	line-height:1.3rem;
-	color:#404040 !important;
-	background-color:#f5f5f5 !important;
+	color: var(--color-strong-text)!important;
+	background-color: var(--color-light)!important;
 	font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
@@ -79,7 +89,7 @@ hr.hidden-margin {
 }
 
 section {
-	background-color: white;
+	background-color: var(--color-base-background);
 	font-weight: 400;
 	padding: 0.7rem 1.4rem 0rem 1.4rem;
 }
@@ -98,7 +108,7 @@ section h2 {
 }
 
 section.title {
-	background-color: #2d7788;
+	background-color: var(--color-strong);
 	color: #fff!important;
 	padding: 1.4rem 1.4rem 1.4rem 1.4rem;
 }
@@ -108,14 +118,14 @@ section.title h4 {
 }
 
 section.contact{
-	background-color: #42A8C0;
+	background-color: var(--color-medium);
 	padding: 0.7rem 1.4rem 0.7rem 1.4rem;
 	text-align: center;
-	color: #fff!important;
+	color: var(--color-light-text)!important;
 }
 
 section.contact .fa {
-	color: #fff!important;
+	color: var(--color-light-text)!important;
 }
 
 section h2 {
@@ -127,7 +137,7 @@ section h3 {
 }
 
 section h4 {
-	color: #404040;
+	color: var(--color-strong-text);
 }
 
 /** row **/ 
@@ -145,7 +155,7 @@ div.row.header {
 div.row span.date {
 	font-weight:normal;
 	font-size: 0.9rem;
-	color: #2d7788;
+	color: var(--color-medium);
 }
 
 section > div.row > div.title {
@@ -158,7 +168,7 @@ section > div.row > div.title > div.heading {
 
 section > div.row > div.title > div.date {
 	position: relative; 
-	width: 50%;
+	width: 60%;
 }
 
 section > div.row > div.title > div.date > div {
@@ -235,7 +245,7 @@ p {
 span.calendar {
 	font-weight:normal;
 	font-size: 0.85rem;
-	color: #2d7788;
+	color: var(--color-medium);
 }
 
 /** Tasks **/
@@ -264,29 +274,29 @@ a {
 }
 
 .tag-main-color {
-	color:#fff!important;
-	background-color:#2d7788!important;
+	color: var(--color-light-text)!important;
+	background-color: var(--color-medium)!important;
 }
 
 .tag-grey {
-	color:#fff!important;
-	background-color:#bfbfbf!important;
+	color: var(--color-light-text)!important;
+	background-color: var(--color-medium-light)!important;
 }
 
 .level-bar {
-	color:#fff!important;
-	background-color:#bfbfbf!important;
+	color: var(--color-light-text)!important;
+	background-color: var(--color-medium-light)!important;
 	width: 100%;
 	text-align: center;
 }
 
 .level-bar-inner {
-	color:#fff!important;
-	background-color:#2d7788!important;
+	color: var(--color-light-text)!important;
+	background-color: var(--color-medium)!important;
 }
 
 .fa {
-	color: #2d7788;
+	color: var(--color-medium);
 }
 
 i {
