@@ -1,3 +1,13 @@
+:root {
+	--color-strong: #00465f;
+	--color-medium: #1c5d73;
+	--color-medium-light: #5f98a3;
+	--color-light: #f0f2f4;
+	--color-base-background: white;
+	--color-strong-text: #404040;
+	--color-light-text: #fff;
+}
+
 body {
 	/*font-family: Verdana,sans-serif;*/
 	/*font-family: "Roboto", sans-serif;*/
@@ -7,8 +17,8 @@ body {
 	font-size:14px;
 	/*font-size:100%;*/
 	line-height:1.3rem;
-	color:#404040 !important;
-	background-color:#f1f1f1 !important;
+	color: var(--color-strong-text)!important;
+	background-color: var(--color-light)!important;
 	font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
@@ -24,7 +34,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.21rem;
+	font-size: 1.14rem;
 }
 
 h3 {	
@@ -74,17 +84,48 @@ hr.hidden-margin {
 /** Content **/
 
 .content {
-	max-width: 980px;
+	max-width: 850px;
 	margin: 0 auto;
 }
 
 section {
-	background-color: white;
-	margin-top: 0.56rem;
+	background-color: var(--color-base-background);
 	font-weight: 400;
-	padding: 1.4rem 1.4rem 1.4rem 1.4rem;
-	box-shadow:0 0.14rem 0.28rem 0 rgba(0,0,0,0.16),0 0.14rem 0.7rem 0 rgba(0,0,0,0.12)!important;
+	padding: 0.7rem 1.4rem 0rem 1.4rem;
+}
 
+section.first {
+	padding: 1.4rem 1.4rem 0rem 1.4rem;
+}
+
+section.last {
+	padding: 0.7rem 1.4rem 1.4rem 1.4rem;
+}
+
+section h2 {
+	padding: 0.7rem 0rem 0.7rem 0rem;
+	margin: 0;
+}
+
+section.title {
+	background-color: var(--color-strong);
+	color: #fff!important;
+	padding: 1.4rem 1.4rem 1.4rem 1.4rem;
+}
+
+section.title h4 {
+	color: #fff!important;
+}
+
+section.contact{
+	background-color: var(--color-medium);
+	padding: 0.7rem 1.4rem 0.7rem 1.4rem;
+	text-align: center;
+	color: var(--color-light-text)!important;
+}
+
+section.contact .fa {
+	color: var(--color-light-text)!important;
 }
 
 section h2 {
@@ -96,7 +137,7 @@ section h3 {
 }
 
 section h4 {
-	color: #404040;
+	color: var(--color-strong-text);
 }
 
 /** row **/ 
@@ -114,10 +155,29 @@ div.row.header {
 div.row span.date {
 	font-weight:normal;
 	font-size: 0.9rem;
-	color: #419488;
+	color: var(--color-medium);
 }
 
-div.table {
+section > div.row > div.title {
+	display: flex;
+}
+
+section > div.row > div.title > div.heading {
+	flex-grow: 1;
+}
+
+section > div.row > div.title > div.date {
+	position: relative; 
+	width: 60%;
+}
+
+section > div.row > div.title > div.date > div {
+	bottom: 0px; 
+	right: 0px; 
+	position:absolute;
+}
+
+/*div.table {
 	display: table;
 	width: 100%;
 	overflow:hidden;
@@ -127,13 +187,24 @@ div.table > div.cell {
 	display: table-cell;
     vertical-align: middle;
     width: 50%;
+}*/
+
+div.row > div.cell {
+	display: block;
+    /*vertical-align: middle;*/
+    /*width: 50%;*/
 }
 
 @media (max-width:560px){
-	div.table > div.cell {
+	/*div.table > div.cell {
 		display: block;
 		width: 100%;
 	}
+
+	div.row > div.cell {
+		display: block;
+		width: 100%;
+	}*/
 }
 
 div.contact > div.link-column {
@@ -155,14 +226,6 @@ div.link-column > ul {
 	}	
 }
 
-div.language-left {
-	padding-right: 1rem;
-}
-
-div.language-right {
-	padding-left: 1rem;
-}
-
 @media (max-width:560px){
 	div.language-left {
 		padding-right: 0rem;
@@ -182,7 +245,7 @@ p {
 span.calendar {
 	font-weight:normal;
 	font-size: 0.85rem;
-	color: #419488;
+	color: var(--color-medium);
 }
 
 /** Tasks **/
@@ -210,27 +273,32 @@ a {
 	text-align:center;
 }
 
-.tag-green {
-	color:#fff!important;
-	background-color:#009688!important;
+.tag-main-color {
+	color: var(--color-light-text)!important;
+	background-color: var(--color-medium)!important;
 }
 
 .tag-grey {
-	color:#fff!important;
-	background-color:#bfbfbf!important;
+	color: var(--color-light-text)!important;
+	background-color: var(--color-medium-light)!important;
+}
+
+.level-bar {
+	color: var(--color-light-text)!important;
+	background-color: var(--color-medium-light)!important;
+	width: 100%;
+	text-align: center;
+}
+
+.level-bar-inner {
+	color: var(--color-light-text)!important;
+	background-color: var(--color-medium)!important;
 }
 
 .fa {
-	color: #419488;
+	color: var(--color-medium);
 }
 
 i {
 	margin-right: 0.3rem !important;
-}
-
-@page  
-{ 
-    size: auto;
-    /* this affects the margin in the printer settings */ 
-    margin: 5mm;
 }
