@@ -302,10 +302,3 @@ a {
 i {
 	margin-right: 0.3rem !important;
 }
-
-@page  
-{ 
-    size: auto;
-    /* this affects the margin in the printer settings */ 
-    margin: 5mm;
-}
