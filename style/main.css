@@ -3,10 +3,17 @@
 	--color-medium: #1c5d73;
 	--color-medium-light: #5f98a3;
 	--color-light: #f0f2f4;
+	--color-highlight: #4d7470;
+	--color-highlight-backup: #ffa700;
 	--color-base-background: white;
 	--color-strong-text: #404040;
 	--color-light-text: #fff;
 }
+
+/** Pallete's: 
+	- https://colorpalettes.net/color-palette-47/ 
+	- https://colorpalettes.net/color-palette-2139/
+	**/
 
 body {
 	/*font-family: Verdana,sans-serif;*/
@@ -261,7 +268,7 @@ a {
 
 .description a {
 	font-weight: 500;
-}
+} 
 
 /** special **/ 
 
@@ -278,12 +285,22 @@ a {
 	text-align:center;
 }
 
-.tag-main-color {
+.main-color {
 	color: var(--color-light-text)!important;
 	background-color: var(--color-medium)!important;
 }
 
-.tag-grey {
+.highlight-color {
+	color: var(--color-light-text)!important;
+	background-color: var(--color-highlight)!important;
+}
+
+.highlight-b-color {
+	color: var(--color-strong-text)!important;
+	background-color: var(--color-light)!important;
+}
+
+.medium-light-color {
 	color: var(--color-light-text)!important;
 	background-color: var(--color-medium-light)!important;
 }
@@ -292,6 +309,10 @@ a {
 	color: var(--color-light-text)!important;
 	background-color: var(--color-medium-light)!important;
 	width: 100%;
+	text-align: center;
+}
+
+.center {
 	text-align: center;
 }
 
