@@ -127,11 +127,11 @@ section.title h4 {
 section.contact{
 	background-color: var(--color-medium);
 	padding: 0.7rem 1.4rem 0.7rem 1.4rem;
-	text-align: center;
+	/*text-align: center;*/
 	color: var(--color-light-text)!important;
 }
 
-section.contact .fa {
+section.contact .fa, section.title .fa{
 	color: var(--color-light-text)!important;
 }
 
@@ -214,10 +214,10 @@ div.row > div.cell {
 	}*/
 }
 
-div.contact > div.link-column {
+/*div.contact > div.link-column {
 	display: inline-block;
 	float: right;
-}
+}*/
 
 div.link-column > ul {
 	list-style: none;
@@ -225,9 +225,9 @@ div.link-column > ul {
 }
 
 @media (max-width:560px){
-	div.contact > div.link-column {
+	/*div.contact > div.link-column {
 		float: none;
-	}
+	}*/
 	div.link-column > ul {
 		padding-left: 0rem;
 	}	
