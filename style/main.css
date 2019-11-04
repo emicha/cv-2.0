@@ -16,13 +16,8 @@
 	**/
 
 body {
-	/*font-family: Verdana,sans-serif;*/
-	/*font-family: "Roboto", sans-serif;*/
 	font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Lucida Grande,Helvetica,Arial,sans-serif,Segoe UI Symbol,Hiragino Kaku Gothic Pro,Meiryo,Hiragino Sans GB W3,Noto Naskh Arabic,Droid Arabic Naskh,Geeza Pro,Simplified Arabic,Noto Sans Thai,Thonburi,Dokchampa,Droid Sans Thai,Droid Sans Fallback,'.SFNSDisplay-Regular',Heiti SC,Microsoft Yahei;
-	/*font-family: "Segoe UI", Arial, sans-serif*/
-	/*font-family: Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Lucida Grande,Helvetica,Arial;*/
 	font-size:14px;
-	/*font-size:100%;*/
 	line-height:1.3rem;
 	color: var(--color-strong-text)!important;
 	background-color: var(--color-light)!important;
@@ -32,7 +27,6 @@ body {
 }
 
 h1,h2,h3,h4,h5 {
-	/*font-family:Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Lucida Grande,Helvetica,Arial;*/
 	margin: 0.14rem 0rem 0.14rem 0rem;
 }
 
@@ -184,22 +178,8 @@ section > div.row > div.title > div.heading-right > div {
 	position:absolute;
 }
 
-/*div.table {
-	display: table;
-	width: 100%;
-	overflow:hidden;
-}
-
-div.table > div.cell {
-	display: table-cell;
-    vertical-align: middle;
-    width: 50%;
-}*/
-
 div.row > div.cell {
 	display: block;
-    /*vertical-align: middle;*/
-    /*width: 50%;*/
 }
 
 @media (max-width:512px){
@@ -218,21 +198,7 @@ div.row > div.cell {
 	section > div.row > div.title {
 		display: table;
 	}
-	/*div.table > div.cell {
-		display: block;
-		width: 100%;
-	}
-
-	div.row > div.cell {
-		display: block;
-		width: 100%;
-	}*/
 }
-
-/*div.contact > div.link-column {
-	display: inline-block;
-	float: right;
-}*/
 
 div.link-column > ul {
 	list-style: none;
@@ -240,9 +206,6 @@ div.link-column > ul {
 }
 
 @media (max-width:560px){
-	/*div.contact > div.link-column {
-		float: none;
-	}*/
 	div.link-column > ul {
 		padding-left: 0rem;
 	}	
