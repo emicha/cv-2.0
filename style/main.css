@@ -198,6 +198,14 @@ div.row > div.cell {
 	section > div.row > div.title {
 		display: table;
 	}
+
+	section.contact > div.row > div.title {
+		display: inline;
+	}
+
+	section.contact div.row div.title {
+		text-align: center;
+	}
 }
 
 div.link-column > ul {
