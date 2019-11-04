@@ -169,16 +169,16 @@ section > div.row > div.title {
 	display: flex;
 }
 
-section > div.row > div.title > div.heading-right {
+section > div.row > div.title > div.heading-left {
 	flex-grow: 1;
 }
 
-section > div.row > div.title > div.heading-left {
+section > div.row > div.title > div.heading-right {
 	position: relative; 
 	width: 60%;
 }
 
-section > div.row > div.title > div.heading-left > div {
+section > div.row > div.title > div.heading-right > div {
 	bottom: 0px; 
 	right: 0px; 
 	position:absolute;
