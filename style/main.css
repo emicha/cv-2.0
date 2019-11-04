@@ -175,7 +175,7 @@ section > div.row > div.title > div.heading-left {
 
 section > div.row > div.title > div.heading-right {
 	position: relative; 
-	width: 60%;
+	width: 50%;
 }
 
 section > div.row > div.title > div.heading-right > div {
@@ -202,7 +202,22 @@ div.row > div.cell {
     /*width: 50%;*/
 }
 
-@media (max-width:560px){
+@media (max-width:512px){
+	section > div.row > div.title > div.heading-left {
+		width: 100%;
+	}
+
+	section > div.row > div.title > div.heading-right {
+		width: 100%;
+	}
+
+	section > div.row > div.title > div.heading-right > div {
+		position:relative;
+	}
+
+	section > div.row > div.title {
+		display: table;
+	}
 	/*div.table > div.cell {
 		display: block;
 		width: 100%;
