@@ -7,4 +7,4 @@ fi
 
 mkdir -p dist
 
-tar -czvf dist/cv.tar.gz $SCRIPT_DIR
+tar --exclude='./dist' -czvf dist/cv.tar.gz $SCRIPT_DIR
